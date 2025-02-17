@@ -28,7 +28,6 @@ def register_view(request):
     return render(request, 'account_app/register.html')
 
 
-from django.contrib.auth import authenticate, login
 
 def login_view(request):
     if request.method == 'POST':
