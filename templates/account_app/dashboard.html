@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Welcome, {{ username }}!</h2>
+    
+    <p>Your session will expire on: <b>{{ session_expiry }}</b></p>
+
+    <a href="{% url 'account_app:profile' %}">Go to Profile</a> |
+
+    <a href="{% url 'account_app:logout' %}">Logout</a>
+</body>
+</html>
